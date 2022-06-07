@@ -22,6 +22,11 @@ class Photo_editor:
         self.root.geometry('400x400')
         self.root.title('Photo editor')
         self.image_tabs.enable_traversal()
+        
+        
+      #  water=Image.open(r"C:\Users\Dovl\Downloads\PL drafts\watermark.png")
+      #  folder = r"C:\Users\Dovl\Downloads\PL drafts\PIL"
+
 
 # Method thta creates windows and call buttons
     def window(self):
