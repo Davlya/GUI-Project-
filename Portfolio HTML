@@ -1,88 +1,382 @@
-//CSS part
-*{
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+#HTML part
+<!DOCTYPE html> 
+<html lang="ru"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit-no"> 
+        <title>Портфолио</title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="css/style.css"> 
+ 
+    </head> 
+    <body> 
+         
+       <header> 
+           <div class="header_head"> 
+               <div class="conteiner"> 
+                   <div class="head_inner"> 
+                       <div class="logo">Довлят</div> 
+                       <nav> 
+                           <ul> 
+                               <li><a href="#about">Обо мне</a></li> 
+                               <li><a href="#portfolio">Портфолио</a></li> 
+                               <li><a href="#contacts">Контакты</a></li> 
+                               <li class="switch"><a href="#"></a></li> 
+                           </ul> 
+                       </nav> 
+                   </div> 
+               </div> 
+           </div> 
+           <div class="header_body">
+            <div class="container">
+                <div class="header_body_inner">
+                    <div class="left">
+                       <div class="title">
+                        Salam, <br> I am Dovlyat, <br><span>Student</span>
+                       </div> 
+                       <a href="#" class="btn">Contact me</a>
+                    </div>
+                    <div class="right">
+                        <img src="img/me.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+           </div> 
+       </header>  
+
+       <section id="about">
+           <div class="container">
+               <div class="section_title">
+                   Обо мне
+               </div>
+               <div class="about_text">
+                   <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus accusantium tempore officiis modi dolorem labore, at error nesciunt, harum perspiciatis quibusdam quidem pariatur ut. Enim saepe sint quis velit?
+                   </p>
+                   <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus accusantium tempore officiis modi dolorem labore, at error nesciunt, harum perspiciatis quibusdam quidem pariatur ut. Enim saepe sint quis velit?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus accusantium tempore officiis modi dolorem labore, at error nesciunt, harum perspiciatis quibusdam quidem pariatur ut. Enim saepe sint quis velit?
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente inventore suscipit quam iste tempora consectetur magnam voluptate excepturi blanditiis pariatur, non soluta velit officia impedit voluptas, porro ipsum nulla architecto explicabo dolor! Veritatis eius similique quidem veniam. Unde pariatur libero quae modi sint ex fugit reprehenderit nisi nemo provident!
+                </p>
+               </div>
+           </div>
+       </section>
+ <section id="portfolio">
+     <div class="container">
+         <div class="section_title">
+             Портфолио
+         </div>
+         <div class="portfolio_items">
+             <a href="#" class="item">
+                 <img scr="img/1.jpg" alt="">
+             </a>
+             <a href="#" class="item">
+                <img scr="img/2.jpg" alt="">
+            </a>
+            <a href="#" class="item">
+                <img scr="img/3.jpg" alt="">
+            </a>
+            <a href="#" class="item">
+                <img scr="img/2.jpg" alt="">
+            </a>
+            <a href="#" class="item">
+                <img scr="img/3.jpg" alt="">
+            </a>
+            <a href="#" class="item">
+                <img scr="img/1.jpg" alt="">
+            </a>
+         </div>
+         <div class="portfolio_btn">
+             <a href="#" class="btn">See more</a>
+         </div>
+     </div>
+ </section>
+ 
+ <section id="contacts">
+     <div class="container">
+         <div class="section_title">
+             Contacts
+         </div>
+         <div class="contacts_form">
+             <form action="">
+                 <input type="text" placeholder="Ваше имя">
+                 <input type="text" placeholder="Телефон">
+                 <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                 <button type="submit">Отправить</button>
+             </form>
+         </div>
+     </div>
+ </section>
+
+ <footer>
+    <p>Copyright, 2020</p> 
+ </footer>
+
+
+
+       <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+       <script src="js/main.js"></script> 
+ 
+    </body> 
+</html>
+
+
+#CSS part
+*{ 
+    margin: 0; 
+    padding: 0; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+} 
+body{ 
+    position: relative; 
+    background-color: #fff; 
+    font-family: 'Montserrat', sans-serif;     
+} 
+body.switchMode{
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
 }
-body{
-    position: inherit;
-    background-color: #fff;
-    font-family: 'Montserrat', sans-serif;    
+.conteiner{ 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px ; 
+} 
+header { 
+    position: relative; 
+    overflow: hidden; 
+    width: 100%; 
+    height: 100vh; 
+} 
+.header_head{ 
+    position: relative; 
+    background-color: #191819; 
+} 
+.head_inner{ 
+    display: -webkit-flex; 
+    display: -moz-flex; 
+    display: -ms-flex; 
+    display: -o-flex; 
+    display: flex; 
+    justify-content: space-between; 
+    -ms-align-items: center; 
+    align-items: center; 
+} 
+.head_inner .logo{ 
+    font-weight: bold; 
+    font-size: 18px; 
+    color: #ccc 
+} 
+.head_inner nav ul{ 
+    margin: 0; 
+    padding: 0; 
+    display: -webkit-flex; 
+    display: -moz-flex; 
+    display: -ms-flex; 
+    display: -o-flex; 
+    display: flex; 
+    -ms-align-items: center; 
+    align-items: center; 
+} 
+.head_inner nav ul li{ 
+    list-style-type: none; 
+} 
+.head_inner nav ul li a{ 
+    font-size: 14px; 
+    color: #ccc; 
+    display: inline-block; 
+    padding: 20px 30px; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+} 
+.head_inner nav ul li.switch a{ 
+    position: relative; 
+    width: 45px; 
+    height: 24px; 
+    border: 1px solid #ccc; 
+    border-radius: 10em; 
+    padding: 0; 
+    margin-top: 5px; 
+    overflow: hidden; 
+} 
+.head_inner nav ul li.switch a:after{ 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 24px; 
+    height: 24px; 
+    background-color: #fff; 
+    border-radius: 10em; 
+    -webkit-transition: all .5s ease; 
+    -o-transition: all .5s ease; 
+    transition: all .5s ease; 
 }
-.conteiner{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px ;
-}
-header {
+body.switchMode .head_inner nav ul li.switch a:after{
+    left: 20px
+} 
+.header_body{
     position: relative;
-    overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    margin-top: 150px;
 }
-.header_head{
-    position: relative;
-    background-color: #191819;
-}
-.head_inner{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-    -ms-align-items: center;
-    align-items: center;
-}
-.head_inner .logo{
-    font-weight: bold;
-    font-size: 18px;
-    color: #ccc
-}
-.head_inner nav ul{
-    margin: 0;
-    padding: 0;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-}
-.head_inner nav ul li{
-    list-style-type: none;
-}
-.head_inner nav ul li a{
-    font-size: 14px;
-    color: #ccc;
-    display: inline-block;
-    padding: 20px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.head_inner nav ul li.switch a{
-    position: relative;
-    width: 45px;
-    height: 24px;
-    border: 1px solid #ccc;
-    border-radius: 10em;
-    padding: 0;
-    margin-top: 5px;
-    overflow: hidden;
-}
-.head_inner nav ul li.switch a:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    background-color: #fff;
-    border-radius: 10em;
-    -webkit-transition: all .5s ease;
+.header_body_inner{
+    display: -webkit-flex; 
+    display: -moz-flex; 
+    display: -ms-flex; 
+    display: -o-flex; 
+    display: flex; 
+    -ms-align-items: center; 
+    align-items: center; 
+    width:100%
+}    
+.header_body_inner .left .title{
+    color: #333;
+    font-style: 46px;
+    -webkit-transition: all .5s ease ;
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
+body.switchMode .header_body_inner .left .title{
+    color: #fff;
+}
+.header_body_inner .left .title span{
+    color: #f83b3a;
+}
+a.btn{
+    display: inline-block;
+    background-color: #f83b3a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.header_body_inner .right img{
+    border-radius: 50%;
+}
+section{
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    height: 100vh;
+}
+.section_title{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+}
+body.switchMode .section_title{
+    color: #fff;
+}
+.about_text{
+    margin-top: 45px;
+}
+.about_text p{
+    font-style: 10px;
+    margin-bottom: 25px;
+}
+body_switchMode .about_text p{
+    color: #fff;
+}
+.portfolio_items{
+    margin-top: 45px;
+    display: -webkit-flex; 
+    display: -moz-flex; 
+    display: -ms-flex; 
+    display: -o-flex; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio_items .item{
+    display: block;
+    position: relative;
+    margin: 0 10px 15px 0;
+    width: calc(100% / 3 - 10px);
+}
+.portfolio_items .item: :last-child{
+    margin-right: 0;
+}
+.portfolio_items .item img{
+    max-width: 100%;
+}
+.portfolio_btn{
+    display: -webkit-flex; 
+    display: -moz-flex; 
+    display: -ms-flex; 
+    display: -o-flex; 
+    display: flex;
+    justify-content: center;
+}
+.contacts_form{
+    position: relative;
+    max-width: 700px;
+    margin: 45px auto;
+    text-align: center;
+}
+.contacts_form form input{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 30;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+.contacts_form form textarea{
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 10px 0 10px 30;
+    font-family: 'Montserrat', sans-serif;
+}
+.contacts_form form button{
+    background-color: #f83b3a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+}
+footer{
+  position: relative;  
+  padding: 20px 0;
+  background-color: #181918;
+}
+footer p{
+    text-align: center;
+    color: #ccc;
+}
+
+# JS part
+$(function(){
+
+    $(".head_inner nav ul li.switch a").on("click",function(e)){
+        $("body").toggleClass("switchMode");
+        e.preventDefault();
+
+
+    }
+})
