@@ -20,7 +20,7 @@
                        <div class="logo">Довлят</div> 
                        <nav> 
                            <ul> 
-                               <li><a href="#about">Обо мне</a></li> 
+                               <li><a href="#about">информация</a></li> 
                                <li><a href="#portfolio">Портфолио</a></li> 
                                <li><a href="#contacts">Контакты</a></li> 
                                <li class="switch"><a href="#"></a></li> 
@@ -34,7 +34,7 @@
                 <div class="header_body_inner">
                     <div class="left">
                        <div class="title">
-                        Salam, <br> I am Dovlyat, <br><span>Student</span>
+                        Hey there, <br> I am Dovlyat, <br><span>Student of Ala-Too international University</span>
                        </div> 
                        <a href="#" class="btn">Contact me</a>
                     </div>
@@ -51,20 +51,20 @@
        <section id="about">
            <div class="container">
                <div class="section_title">
-                   Обо мне
+                   информация
                </div>
                <div class="about_text">
                    <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus accusantium tempore officiis modi dolorem labore, at error nesciunt, harum perspiciatis quibusdam quidem pariatur ut. Enim saepe sint quis velit?
+                       First and Second name: KERIMOV DOVLYAT
                    </p>
                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus accusantium tempore officiis modi dolorem labore, at error nesciunt, harum perspiciatis quibusdam quidem pariatur ut. Enim saepe sint quis velit?
+                    SKills: Model, Python Programmer , dancer , sportsman
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus accusantium tempore officiis modi dolorem labore, at error nesciunt, harum perspiciatis quibusdam quidem pariatur ut. Enim saepe sint quis velit?
+                    Biography: Male, height - 191 cm, weight - 80 kg , age - 19 years 
                 </p>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente inventore suscipit quam iste tempora consectetur magnam voluptate excepturi blanditiis pariatur, non soluta velit officia impedit voluptas, porro ipsum nulla architecto explicabo dolor! Veritatis eius similique quidem veniam. Unde pariatur libero quae modi sint ex fugit reprehenderit nisi nemo provident!
+                    Prices : Champion of UnitedWrestling
                 </p>
                </div>
            </div>
@@ -117,7 +117,7 @@
  </section>
 
  <footer>
-    <p>Copyright, 2020</p> 
+    <p>Proffessor of science</p> 
  </footer>
 
 
@@ -311,7 +311,7 @@ body_switchMode .about_text p{
     margin: 0 10px 15px 0;
     width: calc(100% / 3 - 10px);
 }
-.portfolio_items .item: :last-child{
+.portfolio_items .item:last-child{
     margin-right: 0;
 }
 .portfolio_items .item img{
